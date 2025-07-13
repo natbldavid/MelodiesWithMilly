@@ -17,7 +17,7 @@ if (forced) {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GoogleReCaptchaProvider reCaptchaKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}>
-      <BrowserRouter>
+      <BrowserRouter basename="/MelodiesWithMilly">
         <Layout />
       </BrowserRouter>
     </GoogleReCaptchaProvider>

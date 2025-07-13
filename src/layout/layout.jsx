@@ -1,6 +1,6 @@
 // src/layout/Layout.jsx
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useMatch } from 'react-router-dom';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import HomeScreen from '../components/maincontent/homescreen/homescreen';
@@ -16,8 +16,7 @@ import ReviewSection from '../components/ratings/ratings';
 import './layout.css';
 
 const Layout = () => {
-  const location = useLocation();
-  const isHome = location.pathname === '/';
+const isHome = useMatch({ path: '/', end: true }) !== null;
 
   const [showNav, setShowNav] = useState(!isHome);
 
@@ -37,6 +36,8 @@ const Layout = () => {
       setShowNav(window.scrollY > threshold);
     };
     window.addEventListener('scroll', onScroll);
+// immediately run once so showNav is correct on load
+onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, [isHome]);
 
