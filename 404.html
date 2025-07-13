@@ -1,0 +1,15 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    // Grab the full unmatched URL
+    const fullPath = window.location.pathname + window.location.search + window.location.hash;
+    // Redirect to index.html, carrying the original in `?path=…`
+    window.location.replace(`./?path=${encodeURIComponent(fullPath)}`);
+  </script>
+  <title>Redirecting…</title>
+</head>
+<body></body>
+</html>
