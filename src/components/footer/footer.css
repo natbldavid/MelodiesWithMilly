@@ -1,0 +1,42 @@
+/* src/components/Footer/Footer.css */
+.footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footercontact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.footer-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  margin: 8px auto 0;
+  background-color: #f97316; /* Tailwind's orange-500 */
+}
+
+@media (min-width: 768px) {
+  .footer-title::after {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

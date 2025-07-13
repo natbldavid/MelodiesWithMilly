@@ -1,0 +1,96 @@
+/* src/components/maincontent/contactusscreen/contactusscreen.css */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    padding-top: 150px; /* 👈 Add this line */
+    background-color: #F6EDEE;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-message {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #FF6700;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 20px; /* Increased gap between first and last name */
+}
+
+.contact-input,
+.contact-textarea {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-button {
+    background-color: #ff00aa;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #a3056e;
+}
+
+.contact-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

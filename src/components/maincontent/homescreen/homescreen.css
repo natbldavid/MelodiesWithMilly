@@ -1,0 +1,66 @@
+/* HomeScreen.css */
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-slide {
+  min-width: 60%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1;
+}
+
+.slide-left {
+  animation: slideLeft 0.5s ease forwards;
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.review-button {
+  color: #000;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0 10px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.review-button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .review-button {
+    font-size: 1.6rem;
+  }
+}

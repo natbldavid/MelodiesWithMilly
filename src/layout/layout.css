@@ -1,0 +1,21 @@
+/* src/layout/layout.css */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px; /* Prevent content from being hidden behind fixed navbar */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+      transition: padding-top 0.3s ease;
+}
+
+body:not(.navbar-overlay-mode) .main-content {
+  padding-top: 90px; /* Match non-scrolled navbar height */
+}
+
+body.navbar-overlay-mode .main-content {
+  padding-top: 0; /* Navbar overlays when scrolled */
+}
