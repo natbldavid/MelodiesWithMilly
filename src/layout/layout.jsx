@@ -49,7 +49,7 @@ onScroll();
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomeScreen />} />
-            <Route path="/about" element={<AboutUsScreen />} />
+            <Route path="/aboutme" element={<AboutUsScreen />} />
             <Route path="/enquiries" element={<ContactUsScreen />} />
             <Route path="/characters" element={<OurCharactersScreen />} />
             <Route path="/testimonials" element={<TestimonialsScreen />} />

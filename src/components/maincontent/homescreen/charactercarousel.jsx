@@ -111,7 +111,7 @@ const CharacterCarousel = () => {
 
       {/* See More Button */}
       <div className="text-center mt-6">
-        <button onClick={() => navigate('/ourcharacters')}
+        <button onClick={() => navigate('/characters')}
         className="px-6 py-2 bg-[#97B4EA] text-white rounded-lg hover:bg-[#7592c9] transition-all duration-300 tracking-[0.2em]">
           See More
         </button>

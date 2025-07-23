@@ -113,7 +113,7 @@ const PackagesScreen = () => {
                       <button
                         onClick={e => {
                           e.stopPropagation();
-                          navigate('/contact', { state: { preselectedPackage: pkg.id } });
+                          navigate('/enquiries', { state: { preselectedPackage: pkg.id } });
                         }}
                         className="mt-4 bg-[#97B4EA] text-white py-2 rounded-lg hover:bg-[#7592c9] transition tracking-[0.2em]"
                       >

@@ -104,7 +104,7 @@ const HomeScreen = () => {
         Book your unique experience today and let the joyous celebrations begin!
       </p>
               <button
-          onClick={() => navigate('/contact')}
+          onClick={() => navigate('/enquiries')}
           className="mt-8 bg-[#97B4EA] text-white py-3 px-20 rounded-lg hover:bg-[#7592c9] transition-all tracking-[0.2em]"
         >
           Enquire Now
