@@ -2,7 +2,7 @@ import React from 'react';
 import manateeicon from '../../assets/TeamManateeLogo.png';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
-import { FaInstagram, FaTiktok } from 'react-icons/fa6';
+import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
             <MdMail /> <span>melodieswithmilly@gmail.com</span>
           </a>
           <a
-            href="https://instagram.com/yourprofile"
+            href="https://www.instagram.com/melodieswithmilly/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-1 hover:text-gray-700"
@@ -33,12 +33,12 @@ const Footer = () => {
             <FaInstagram /> <span>melodieswithmilly</span>
           </a>
           <a
-            href="https://tiktok.com/@yourprofile"
+            href="http://facebook.com/melodieswithmilly"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-1 hover:text-gray-700"
           >
-            <FaTiktok /> <span>melodieswithmilly</span>
+            <FaFacebook /> <span>melodieswithmilly</span>
           </a>
         </div>
         <div className="flex flex-wrap justify-center items-center text-xs text-[#97B4EA]">© 2023 | by Melodies With Milly.</div>

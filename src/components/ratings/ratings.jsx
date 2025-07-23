@@ -1,3 +1,5 @@
+// src/components/ratings/ratings.jsx
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import reviews from '../../config/reviewsConfig'; // adjust path as needed
@@ -73,9 +75,11 @@ const Ratings = () => {
             direction === 'next' ? 'slide-left' : 'slide-right'
           }`}
         >
-          <p className="sm:text-xl mb-4 px-4 line-clamp-5 h-[10rem] flex items-center justify-center text-center">
-            “{reviews[currentReviewIndex].text}”
-          </p>
+          {/* Scrollable text box */}
+          <div className="sm:text-xl mb-4 px-4 text-center h-40 overflow-y-auto">
+            “{reviews[currentReviewIndex].shortForm}”
+          </div>
+
           <div className="text-yellow-500 mb-4 text-lg sm:text-2xl">
             {'★'.repeat(reviews[currentReviewIndex].rating)}
           </div>

@@ -9,16 +9,16 @@ import {
   FaInstagram
 } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
-import { FaTiktok } from 'react-icons/fa6';
+import { FaFacebook } from 'react-icons/fa6';
 import logo from '../../assets/mwmlogoofficial.png';
 
 const navItems = [
   { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
-  { label: 'Characters', path: '/ourcharacters' },
+  { label: 'About', path: '/aboutme' },
+  { label: 'Characters', path: '/characters' },
   { label: 'Packages', path: '/packages' },
-  { label: 'Makeovers', path: '/makeovers' },
-  { label: 'Enquiries', path: '/contact' },
+  { label: 'Makeovers', path: '/little-princess-makeovers' },
+  { label: 'Enquiries', path: '/enquiries' },
   { label: 'Testimonials', path: '/testimonials' },
   { label: 'FAQs', path: '/faqs' },
 ];
@@ -70,7 +70,7 @@ const Header = ({ visible = true }) => {
             <MdMail /> <span>melodieswithmilly@gmail.com</span>
           </div>
           <a
-            href="https://www.instagram.com/emeliehallett/"
+            href="https://www.instagram.com/melodieswithmilly/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -79,13 +79,13 @@ const Header = ({ visible = true }) => {
             <FaInstagram size={24} />
           </a>
           <a
-            href="https://www.tiktok.com/@emeliehallettmusic"
+            href="http://facebook.com/melodieswithmilly"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="TikTok"
+            aria-label="Facebook"
             className="hover:text-[#6187cf]"
           >
-            <FaTiktok size={24} />
+            <FaFacebook size={24} />
           </a>
         </div>
 
@@ -130,7 +130,7 @@ const Header = ({ visible = true }) => {
 
         <div className="absolute bottom-8 w-full flex justify-center space-x-6">
           <a
-            href="https://www.instagram.com/emeliehallett/"
+            href="https://www.instagram.com/melodieswithmilly/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -139,13 +139,13 @@ const Header = ({ visible = true }) => {
             <FaInstagram size={28} />
           </a>
           <a
-            href="https://www.tiktok.com/@emeliehallettmusic"
+            href="http://facebook.com/melodieswithmilly"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="TikTok"
+            aria-label="Facebook"
             className="text-[#97B4EA] hover:text-[#6187cf]"
           >
-            <FaTiktok size={28} />
+            <FaFacebook size={28} />
           </a>
         </div>
       </div>

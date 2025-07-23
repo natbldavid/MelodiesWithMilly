@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "Do you provide music and sound equipment?",
-    answer: "Absolutely! JustYes, we have bluetooth speakers which cover an indoor area with around 20 children, or we have a large sound system with a microphone that can be used to entertain 50+ guests."
+    answer: "Yes, we have bluetooth speakers which cover an indoor area with around 20 children, or we have a large sound system with a microphone that can be used to entertain 50+ guests."
   },
   {
     question: "Do you offer packages with multiple princesses?",

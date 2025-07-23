@@ -1,8 +1,10 @@
 // src/components/CharacterCarousel.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import partyCharacters from '../../../config/ourCharactersConfig';
+import { useNavigate } from 'react-router-dom';
 
 const CharacterCarousel = () => {
+  const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef(null);
   const touchStartX = useRef(0);
@@ -109,7 +111,8 @@ const CharacterCarousel = () => {
 
       {/* See More Button */}
       <div className="text-center mt-6">
-        <button className="px-6 py-2 bg-[#97B4EA] text-white rounded-lg hover:bg-[#7592c9] transition-all duration-300">
+        <button onClick={() => navigate('/ourcharacters')}
+        className="px-6 py-2 bg-[#97B4EA] text-white rounded-lg hover:bg-[#7592c9] transition-all duration-300 tracking-[0.2em]">
           See More
         </button>
       </div>

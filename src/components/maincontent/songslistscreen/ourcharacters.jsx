@@ -17,22 +17,22 @@ const OurCharactersScreen = () => {
         <hr className="border-t-2 border-black shadow-lg mb-8" />
 
         {/* Grid: 1 column on small, 2 on md+ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {partyCharacters.map((char) => (
             <div
               key={char.id}
-              className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row items-center text-left p-4 transition-transform hover:scale-105"
+              className="bg-white rounded-2xl shadow-md overflow-hidden flex flex flex-row items-center text-left p-6 transition-transform hover:scale-105"
             >
               {/* Image on the left */}
               <div className="flex-shrink-0">
                 <img
                   src={char.photo}
                   alt={char.name}
-                  className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                  className="w-40 h-40 md:w-48 md:h-48 object-contain"
                 />
               </div>
               {/* Text on the right */}
-              <div className="mt-4 md:mt-0 md:ml-6 flex-1">
+              <div className="ml-8 flex-1">
                 <h2 className="text-3xl font-semibold text-[#4A4A4A] mb-1">
                   {char.name}
                 </h2>

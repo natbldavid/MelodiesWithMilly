@@ -50,11 +50,11 @@ onScroll();
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/about" element={<AboutUsScreen />} />
-            <Route path="/contact" element={<ContactUsScreen />} />
-            <Route path="/ourcharacters" element={<OurCharactersScreen />} />
+            <Route path="/enquiries" element={<ContactUsScreen />} />
+            <Route path="/characters" element={<OurCharactersScreen />} />
             <Route path="/testimonials" element={<TestimonialsScreen />} />
             <Route path="/packages" element={<PackagesScreen />} />
-            <Route path="/makeovers" element={<MakeOverScreen />} />
+            <Route path="/little-princess-makeovers" element={<MakeOverScreen />} />
             <Route path="/faqs" element={<FAQsScreen />} />
             <Route path="*" element={<HomeScreen />} />
           </Routes>
